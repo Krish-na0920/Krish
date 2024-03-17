@@ -1,0 +1,29 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+class a{
+public:
+int A;
+public: 
+void input()
+{
+cout<<"Enter the value for A"<<endl;
+cin>>A;
+}
+};
+class b:public a
+{
+public:
+void display()
+{
+cout<<" value of A is "<<A<<endl;
+}
+};
+void main()
+{
+clrscr();
+b B;
+B.input();
+B.display();
+getch();
+}
